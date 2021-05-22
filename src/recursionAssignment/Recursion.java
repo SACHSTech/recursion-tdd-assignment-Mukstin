@@ -14,6 +14,26 @@ public class Recursion {
 
     return counter + count7(n / 10);
   }
+public static String changePi(String str) {
+    String str2 = "";
+    return changePi(str, str2);
+  }
 
+  public static String changePi(String str, String str2) {
+    if (str.length() == 0) {
+      return str2;
+    } else {
+      if (str.endsWith("pi")) {
+        str2 = 3.14 + str2;
+        return changePi(str.substring(0, str.length() - 2), str2);
+      } else {
+        str2 = str.charAt(str.length() - 1) + str2;
+      }
+    }
+    return changePi(str.substring(0, str.length() - 1), str2);
+
+  }
+
+  
   
 }
