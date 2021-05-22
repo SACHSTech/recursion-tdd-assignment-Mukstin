@@ -1,5 +1,21 @@
 package recursionAssignment;
 
-public class Recursion{
+import java.io.*;
+
+public class Recursion {
+  public static void main(String[] args)throws IOException{
+    System.out.println(count7(717));
+  } 
+  public static int count7(int n) {
+    int counter = 0;
+
+    if (n % 10 == 7)
+      counter++;
+
+    if (n / 10 == 0)
+      return counter;
+
+    return counter + count7(n / 10);
+  }
 
 }
