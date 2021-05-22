@@ -67,5 +67,34 @@ public class RecursionTest{
         // assertTrue(TESTBOOLEAN);
         assertEquals("3.14p", Recursion.changePi("pip"));
     }
-
+     /**
+     * Testing the stringClean method (First Example)
+     */
+    @Test
+    public void Test7(){
+        // make assertion statement(s)
+        // assertEquals(EXPECTEDVALUE, TESTVALUE);
+        // assertTrue(TESTBOOLEAN);
+        assertEquals("yza", Recursion.stringClean("yyzzza"));
+    }
+      /**
+     * Testing the stringClean method (Second Example)
+     */
+     @Test
+    public void Test8(){
+        // make assertion statement(s)
+        // assertEquals(EXPECTEDVALUE, TESTVALUE);
+        // assertTrue(TESTBOOLEAN);
+        assertEquals("abcd", Recursion.stringClean("abbbcdd"));
+    }
+     /**
+     * Testing the stringClean method (Third Example)
+     */
+     @Test
+    public void Test9(){
+        // make assertion statement(s)
+        // assertEquals(EXPECTEDVALUE, TESTVALUE);
+        // assertTrue(TESTBOOLEAN);
+        assertEquals("Helo", Recursion.stringClean("Hello"));
+    }
 }
