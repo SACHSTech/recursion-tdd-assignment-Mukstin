@@ -3,9 +3,6 @@ package recursionAssignment;
 import java.io.*;
 
 public class Recursion {
-  public static void main(String[] args)throws IOException{
-    System.out.println(count7(717));
-  } 
   public static int count7(int n) {
     int counter = 0;
 
@@ -18,4 +15,5 @@ public class Recursion {
     return counter + count7(n / 10);
   }
 
+  
 }
